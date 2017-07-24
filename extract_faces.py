@@ -9,8 +9,6 @@ faceDet4 = cv2.CascadeClassifier("classifiers/haarcascade_frontalface_alt_tree.x
 # Emotions
 emotions = ["neutral", "anger", "contempt", "disgust", "fear", "happy", "sadness", "surprise"] 
 
-print "           __  __     _    _        \n    /\\    / _|/ _|   | |  | |       \n   /  \\  | |_| |_ ___| | _| |_ __ _ \n  / /\\ \\ |  _|  _/ _ \\ |/ / __/ _` |\n / ____ \\| | | ||  __/   <| || (_| |\n/_/    \\_\\_| |_| \\___|_|\\_\\\\__\\__,_|\n"
-
 def detect_faces(emotion):
     files = glob.glob("datasets/sorted_dataset/%s/*" %emotion) # Get list of all images with emotion
     filenumber = 0
