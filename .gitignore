@@ -1,0 +1,16 @@
+
+models/*
+!models/.gitkeep
+!models/default-model.xml
+
+datasets/emotions/emotions_data/*
+!datasets/emotions/emotions_data/.gitkeep
+
+datasets/emotions/emotions_images/*
+!datasets/emotions/emotions_images/.gitkeep
+
+datasets/faces_dataset/*
+!datasets/faces_dataset/.gitkeep
+
+datasets/sorted_dataset/*
+!datasets/sorted_dataset/.gitkeep
