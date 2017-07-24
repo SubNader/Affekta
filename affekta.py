@@ -7,6 +7,8 @@ face_classifier.load("models/default-model.xml")
 face_detector = cv2.CascadeClassifier("classifiers/haarcascade_frontalface_default.xml")
 font = cv2.FONT_HERSHEY_SIMPLEX
 
+print "           __  __     _    _        \n    /\\    / _|/ _|   | |  | |       \n   /  \\  | |_| |_ ___| | _| |_ __ _ \n  / /\\ \\ |  _|  _/ _ \\ |/ / __/ _` |\n / ____ \\| | | ||  __/   <| || (_| |\n/_/    \\_\\_| |_| \\___|_|\\_\\\\__\\__,_|\n"
+
 def detect_face(raw_image):
 	face = face_detector.detectMultiScale(raw_image, scaleFactor=1.1, minNeighbors=10, minSize=(5, 5), flags=cv2.CASCADE_SCALE_IMAGE)
 	if len(face) == 1:
